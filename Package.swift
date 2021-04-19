@@ -32,13 +32,13 @@ import PackageDescription
 let package = Package(
     name: "AzureCommunication",
     platforms: [
-        .macOS(.v10_13), .iOS(.v12)
+        .macOS(.v10_15), .iOS(.v12)
     ],
     products: [
         .library(name: "AzureCommunication", targets: ["AzureCommunication"])
     ],
     dependencies: [
-        .package(url: "https://github.com/Azure/SwiftPM-AzureCore.git", from: "master")
+        .package(name: "AzureCore", url: "https://github.com/Azure/SwiftPM-AzureCore.git", .branch("master"))
     ],
     targets: [
         // Build targets
