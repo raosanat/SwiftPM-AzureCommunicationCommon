@@ -35,7 +35,7 @@ let package = Package(
         .macOS(.v10_15), .iOS(.v12)
     ],
     products: [
-        .library(name: "AzureCommunicationCommon", targets: ["AzureCommunicationCommon"])
+        .library(name: "AzureCommunicationCommon", type: .dynamic, targets: ["AzureCommunicationCommon"])
     ],
     dependencies: [
         .package(name: "AzureCore", url: "https://github.com/Azure/SwiftPM-AzureCore.git", from: "1.0.0-beta.12")
