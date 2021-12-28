@@ -51,7 +51,8 @@ let package = Package(
                 "Tests",
                 "Source/Supporting Files",
                 "LICENSE"
-            ]
+            ],
+            swiftSettings: [.define("SWIFT_INSTALL_OBJC_HEADER=YES")]
         ),
         // Test targets
         .testTarget(
