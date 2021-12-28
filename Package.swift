@@ -52,7 +52,7 @@ let package = Package(
                 "Source/Supporting Files",
                 "LICENSE"
             ],
-            swiftSettings: [.define("-emit-objc-header-path=./Headers/AzureCommunicationCommon-Swift.h")]
+            swiftSettings: [.unsafeFlags(["-emit-objc-header-path", "Headers/AzureCommunicationCommon-Swift.h"])]
         ),
         // Test targets
         .testTarget(
