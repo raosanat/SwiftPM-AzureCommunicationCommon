@@ -52,7 +52,7 @@ let package = Package(
                 "Source/Supporting Files",
                 "LICENSE"
             ],
-            swiftSettings: [.define("SWIFT_INSTALL_OBJC_HEADER=YES")]
+            swiftSettings: [.define("-emit-objc-header-path=./Headers/AzureCommunicationCommon-Swift.h")]
         ),
         // Test targets
         .testTarget(
